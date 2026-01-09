@@ -1,83 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zheng Kai | Personal Website</title>
+  <meta name="description" content="Zheng Kai. Aspiring entrepreneur, youth innovator, and project builder." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+    header {
+      padding: 4rem 1.5rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+    header p {
+      margin-top: 1rem;
+      font-size: 1.1rem;
+      color: #94a3b8;
+    }
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 3rem 1.5rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1.2rem;
+    }
+    .card {
+      background: #020617;
+      border-radius: 16px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+    .projects ul {
+      list-style: none;
+    }
+    .projects li {
+      margin-bottom: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1.5rem;
+      font-size: 0.9rem;
+      color: #64748b;
+    }
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+  </style>
 </head>
 <body>
 
-    <div class="main-content">
-        <aside class="sidebar">
-            <div class="sidebar-info">
-                <figure class="avatar-box">
-                    <img src="Linkedin Banner (3).jpg" alt="Profile Picture" width="80">
-                </figure>
-                <div class="info-content">
-                    <h1 class="name">Your Name</h1>
-                    <p class="title">Student | Aspiring Leader</p>
-                </div>
-            </div>
+  <header>
+    <h1>Zheng Kai</h1>
+    <p>Aspiring Entrepreneur • Youth Innovator • Project Builder</p>
+  </header>
 
-            <div class="sidebar-more-info">
-                <div class="contact-list">
-                    <div class="contact-item">
-                        <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
-                        <div class="contact-info">
-                            <p class="contact-title">Email</p>
-                            <a href="mailto:your@email.com" class="contact-link">your@email.com</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
-                        <div class="contact-info">
-                            <p class="contact-title">Location</p>
-                            <address>City, Country</address>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </aside>
-
-        <div class="content-container">
-            <nav class="navbar">
-                <ul class="navbar-list">
-                    <li class="navbar-item"><a href="index.html" class="navbar-link active">About</a></li>
-                    <li class="navbar-item"><a href="resume.html" class="navbar-link">Resume</a></li>
-                    <li class="navbar-item"><a href="blog.html" class="navbar-link">Blog</a></li>
-                    <li class="navbar-item"><a href="contact.html" class="navbar-link">Contact</a></li>
-                </ul>
-            </nav>
-
-            <article class="about active">
-                <header>
-                    <h2 class="h2 article-title">About Me</h2>
-                </header>
-                <section class="about-text">
-                    <p>I am focused on empowering youth through Entrepreneurship and Financial Literacy.</p>
-                </section>
-                
-                <section class="service">
-                    <h3 class="h3 service-title">What I'm doing</h3>
-                    <ul class="service-list">
-                        <li class="service-item">
-                            <div class="service-content-box">
-                                <h4 class="h4 service-item-title">Entrepreneurship</h4>
-                                <p class="service-item-text">Building products that drive impact.</p>
-                            </div>
-                        </li>
-                        <li class="service-item">
-                            <div class="service-content-box">
-                                <h4 class="h4 service-item-title">Financial Literacy</h4>
-                                <p class="service-item-text">Educating the next generation.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
-            </article>
-        </div>
+  <section class="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>
+        I am a fresh graduate with a strong interest in entrepreneurship, finance, and technology-driven social impact.
+        I enjoy building meaningful projects, especially in youth development, financial literacy, and public health education.
+      </p>
     </div>
+  </section>
+
+  <section class="projects">
+    <h2>Projects</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Defeat the Enemy. Aedes Watch</strong><br/>Web-based platform to fight dengue through reporting, missions, and gamification.</li>
+        <li><strong>Money Town Challenge</strong><br/>A fast-paced board game teaching financial literacy to youths.</li>
+        <li><strong>Prism Path</strong><br/>Minimalist light puzzle game built with HTML, CSS, and JavaScript.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Connect</h2>
+    <div class="card">
+      <p>
+        LinkedIn. <a href="#">Add your link</a><br/>
+        Instagram. <a href="#">@kaizen_29</a><br/>
+        Email. <a href="#">your@email.com</a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Zheng Kai. Built with HTML & CSS.
+  </footer>
+
 </body>
 </html>
