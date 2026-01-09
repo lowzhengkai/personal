@@ -1,0 +1,64 @@
+:root {
+    --bg-color: #0d1117;
+    --accent-color: #b9e7eb;
+    --text-main: #ffffff;
+    --text-dim: #a3abb5;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    gap: 20px;
+}
+
+nav a {
+    color: var(--text-dim);
+    text-decoration: none;
+}
+
+nav a.active {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.resume-item {
+    margin-bottom: 30px;
+}
+
+.skill-tag {
+    background: #21262d;
+    border: 1px solid var(--accent-color);
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.blog-preview {
+    border-bottom: 1px solid #30363d;
+    padding: 20px 0;
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    color: #000;
+    padding: 12px 24px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
