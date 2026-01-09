@@ -1,40 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
 <body>
-    <aside class="sidebar">
-        <div class="profile-img">
-             <img src="banner.jpg" style="width:100%; border-radius:20px;">
-        </div>
-        <h1>Your Name</h1>
-        <span class="tag">Student & Leader</span>
-        
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">About</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
 
-        <div style="margin-top: 100px; font-size: 0.8rem; color: gray;">
-            <p>📍 Location, City</p>
-            <p>✉️ email@example.com</p>
-        </div>
-    </aside>
-
-    <main>
-        <section>
-            <h2 style="border-bottom: 4px solid var(--accent); width: 50px; padding-bottom: 10px;">About Me</h2>
-            <p>I am focused on empowering youth through entrepreneurship and financial literacy.</p>
-            
-            <h3>What I'm doing</h3>
-            <div class="service-grid">
-                <div class="service-card">
-                    <h4 style="color: var(--accent);">Entrepreneurship</h4>
-                    <p>Building products and initiatives that drive social change.</p>
-                </div>
-                <div class="service-card">
-                    <h4 style="color: var(--accent);">Financial Literacy</h4>
-                    <p>Bridging the gap between education and independence.</p>
+    <div class="main-content">
+        <aside class="sidebar">
+            <div class="sidebar-info">
+                <figure class="avatar-box">
+                    <img src="Linkedin Banner (3).jpg" alt="Profile Picture" width="80">
+                </figure>
+                <div class="info-content">
+                    <h1 class="name">Your Name</h1>
+                    <p class="title">Student | Aspiring Leader</p>
                 </div>
             </div>
-        </section>
-    </main>
+
+            <div class="sidebar-more-info">
+                <div class="contact-list">
+                    <div class="contact-item">
+                        <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+                            <a href="mailto:your@email.com" class="contact-link">your@email.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="contact-info">
+                            <p class="contact-title">Location</p>
+                            <address>City, Country</address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <div class="content-container">
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item"><a href="index.html" class="navbar-link active">About</a></li>
+                    <li class="navbar-item"><a href="resume.html" class="navbar-link">Resume</a></li>
+                    <li class="navbar-item"><a href="blog.html" class="navbar-link">Blog</a></li>
+                    <li class="navbar-item"><a href="contact.html" class="navbar-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <article class="about active">
+                <header>
+                    <h2 class="h2 article-title">About Me</h2>
+                </header>
+                <section class="about-text">
+                    <p>I am focused on empowering youth through Entrepreneurship and Financial Literacy.</p>
+                </section>
+                
+                <section class="service">
+                    <h3 class="h3 service-title">What I'm doing</h3>
+                    <ul class="service-list">
+                        <li class="service-item">
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Entrepreneurship</h4>
+                                <p class="service-item-text">Building products that drive impact.</p>
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Financial Literacy</h4>
+                                <p class="service-item-text">Educating the next generation.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+        </div>
+    </div>
 </body>
+</html>
