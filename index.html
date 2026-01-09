@@ -1,109 +1,121 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zheng Kai | Personal Website</title>
-  <meta name="description" content="Zheng Kai. Aspiring entrepreneur, youth innovator, and project builder." />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: 'Inter', sans-serif;
-      background: #0f172a;
-      color: #e5e7eb;
-      line-height: 1.6;
-    }
-    header {
-      padding: 4rem 1.5rem;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-    }
-    header p {
-      margin-top: 1rem;
-      font-size: 1.1rem;
-      color: #94a3b8;
-    }
-    section {
-      max-width: 900px;
-      margin: auto;
-      padding: 3rem 1.5rem;
-    }
-    h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1.2rem;
-    }
-    .card {
-      background: #020617;
-      border-radius: 16px;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-    }
-    .projects ul {
-      list-style: none;
-    }
-    .projects li {
-      margin-bottom: 1rem;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem 1.5rem;
-      font-size: 0.9rem;
-      color: #64748b;
-    }
-    a {
-      color: #38bdf8;
-      text-decoration: none;
-    }
-    a:hover { text-decoration: underline; }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Low Zhengkai — Portfolio</title>
+  <meta name="description" content="Low Zhengkai — digital resume, projects, writing and newsletter." />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Low Zhengkai — Portfolio">
+  <meta property="og:description" content="Digital resume, projects, and newsletter from Low Zhengkai.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lowzhengkai.github.io/personal/">
+  <meta property="og:image" content="/assets/banner-social.png">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
-  <header>
-    <h1>Zheng Kai</h1>
-    <p>Aspiring Entrepreneur • Youth Innovator • Project Builder</p>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="/">
+        <svg width="36" height="36" aria-hidden="true" focusable="false"><rect width="36" height="36" rx="8" fill="#bfeef0"/></svg>
+        <span class="brand-name">Low Zhengkai</span>
+      </a>
+      <nav class="main-nav" aria-label="Main">
+        <a href="#work">Work</a>
+        <a href="#writing">Writing</a>
+        <a href="#about">About</a>
+        <a class="cta" href="#subscribe">Subscribe</a>
+      </nav>
+    </div>
   </header>
 
-  <section class="about">
-    <h2>About Me</h2>
-    <div class="card">
-      <p>
-        I am a fresh graduate with a strong interest in entrepreneurship, finance, and technology-driven social impact.
-        I enjoy building meaningful projects, especially in youth development, financial literacy, and public health education.
-      </p>
-    </div>
-  </section>
+  <main class="wrap main">
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Empowering youth through <span class="highlight">Entrepreneurship</span> and <span class="highlight">Financial Literacy</span></h1>
+        <p class="hero-sub">I build learning programs, write about product & growth, and help organisations scale impact. This site is a digital resume, portfolio, and a place for my writing.</p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="#work">See projects</a>
+          <a class="btn-ghost" id="subscribe-cta" href="#subscribe">Be part of the change — subscribe</a>
+        </div>
+        <ul class="hero-meta">
+          <li><strong>Role:</strong> Product & Growth · Web · Community</li>
+          <li><strong>Location:</strong> Singapore</li>
+        </ul>
+      </div>
 
-  <section class="projects">
-    <h2>Projects</h2>
-    <div class="card">
-      <ul>
-        <li><strong>Defeat the Enemy. Aedes Watch</strong><br/>Web-based platform to fight dengue through reporting, missions, and gamification.</li>
-        <li><strong>Money Town Challenge</strong><br/>A fast-paced board game teaching financial literacy to youths.</li>
-        <li><strong>Prism Path</strong><br/>Minimalist light puzzle game built with HTML, CSS, and JavaScript.</li>
+      <div class="hero-banner" role="img" aria-label="Low Zhengkai speaking">
+        <img src="/assets/banner.png" alt="Low Zhengkai banner">
+      </div>
+    </section>
+
+    <section id="work" class="section card">
+      <h2>Selected projects</h2>
+      <div class="projects-grid">
+        <article class="project">
+          <h3>Project A</h3>
+          <p class="muted">Short description — what, impact, tech.</p>
+          <a href="#" class="link">View project →</a>
+        </article>
+        <article class="project">
+          <h3>Project B</h3>
+          <p class="muted">Short description — what, impact, tech.</p>
+          <a href="#" class="link">View project →</a>
+        </article>
+      </div>
+      <a class="more" href="/projects.html">See all projects</a>
+    </section>
+
+    <section id="writing" class="section card">
+      <h2>Latest writing</h2>
+      <ul class="posts-list">
+        <li><a href="/blog/post-1.html">How I run youth entrepreneurship workshops</a></li>
+        <li><a href="/blog/post-2.html">Frameworks for teaching financial literacy</a></li>
       </ul>
-    </div>
-  </section>
+      <a class="more" href="/blog/">Read all posts</a>
+    </section>
 
-  <section class="contact">
-    <h2>Connect</h2>
-    <div class="card">
-      <p>
-        LinkedIn. <a href="#">Add your link</a><br/>
-        Instagram. <a href="#">@kaizen_29</a><br/>
-        Email. <a href="#">your@email.com</a>
-      </p>
-    </div>
-  </section>
+    <section id="about" class="section card">
+      <h2>About</h2>
+      <p>Brief professional summary; replace this with your 2–3 line headline and a link to the resume PDF.</p>
+      <p class="muted">Skills: HTML · CSS · JavaScript · Product · Community</p>
+      <a class="link" href="/resume.pdf">Download resume</a>
+    </section>
 
-  <footer>
-    © 2026 Zheng Kai. Built with HTML & CSS.
+    <section id="subscribe" class="section subscribe card">
+      <h2>Join the newsletter</h2>
+      <p class="muted">Occasional essays on product, growth, and youth empowerment. No spam, unsubscribe anytime.</p>
+
+      <!-- Newsletter form: replace action with your provider endpoint -->
+      <form id="newsletter-form" action="<!-- REPLACE_WITH_NEWSLETTER_ENDPOINT -->" method="POST" class="subscribe-form">
+        <label for="name" class="sr-only">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name" required>
+        <label for="email" class="sr-only">Email address</label>
+        <input id="email" name="email" type="email" placeholder="you@domain.com" required>
+        <button class="btn-primary" type="submit">Subscribe</button>
+      </form>
+
+      <p class="muted small">Prefer not to use a provider yet? Email me: <a href="mailto:zhengkailow29@gmail.com">zhengkailow29@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <small>© 2026 Low Zhengkai · <a href="https://github.com/lowzhengkai">GitHub</a></small>
+    </div>
   </footer>
 
+  <script>
+    // small UX: smooth scroll to subscribe
+    document.getElementById('subscribe-cta')?.addEventListener('click', function(e){
+      const target = document.getElementById('subscribe');
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({behavior:'smooth', block:'start'});
+      }
+    });
+  </script>
 </body>
 </html>

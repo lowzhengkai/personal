@@ -1,0 +1,10 @@
+IMPORTANT: Upload the provided LinkedIn banner image to this path as `banner.png`.
+This branch references /assets/banner.png, /assets/banner.webp and /assets/banner-social.png.
+
+- Add the original PNG at: /assets/banner.png
+- Add an optimized WebP at: /assets/banner.webp (optional)
+- Add a 1200x630 social share crop at: /assets/banner-social.png
+
+You can replace these files later; they are placeholders so the page renders until the real images are added.
+
+End of files.
